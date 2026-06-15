@@ -1,0 +1,59 @@
+# =========================================================================
+# 1. Build and Output Directories (The Most Crucial Part)
+# =========================================================================
+target/
+build/
+out/
+
+# Clean up the unnecessary, risky exceptions from the default template
+# (Removed the !**/src/main/**/target/ rules that can leak build artifacts)
+
+# =========================================================================
+# 2. Maven Wrapper
+# =========================================================================
+# Ignore the wrapper's downloaded binaries, but keep the property configuration
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================================================================
+# 3. IDE and Text Editors Configuration
+# =========================================================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse / Spring Tool Suite (STS)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# Visual Studio Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# =========================================================================
+# 4. Logs and System Files
+# =========================================================================
+*.log
+logs/
+.DS_Store
+Thumbs.db
+
+# =========================================================================
+# 5. Security Guardrails (Crucial for backend apps)
+# =========================================================================
+# Prevents you from accidentally pushing database credentials or API keys
+.env
+.env.local
+application-local.properties
