@@ -1,6 +1,6 @@
 package com.gaurikumari.marketplace.dto.Response;
 
-import enums.Role;
+import com.gaurikumari.marketplace.enums.UserRole;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,7 +26,7 @@ public class UserResponse {
 
     private Double rating;
 
-    private Role role;
+    private UserRole role;
 
     private LocalDateTime createdAt;
 

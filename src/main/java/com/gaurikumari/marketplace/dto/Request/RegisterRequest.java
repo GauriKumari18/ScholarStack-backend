@@ -1,6 +1,6 @@
 package com.gaurikumari.marketplace.dto.Request;
 
-import enums.Role;
+import com.gaurikumari.marketplace.enums.UserRole;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,6 +22,6 @@ public class RegisterRequest {
 
     private String bio;
 
-    private Role role;
+    private UserRole role;
 
 }
