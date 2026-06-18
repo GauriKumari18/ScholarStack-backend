@@ -49,6 +49,22 @@ public class Project {
     @Column(name = "status", length = 50)
     private ProjectStatus status;
 
+    //  Market Analysis & Pricing Recommendations
+
+    @Column(name = "suggested_min_price")
+    private Double suggestedMinPrice;
+
+    @Column(name = "suggested_price")
+    private Double suggestedPrice;
+
+    @Column(name = "suggested_max_price")
+    private Double suggestedMaxPrice;
+
+    @Column(name = "difficulty_score")
+    private Integer difficultyScore;
+
+
+
     // Many projects can belong to one client (User)
     @ManyToOne
     @JoinColumn(name = "client_id")
@@ -62,7 +78,7 @@ public class Project {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    @OneToMany(mappedBy = "project")
+    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Bid> bids;
 
 }
