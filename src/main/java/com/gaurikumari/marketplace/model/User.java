@@ -10,6 +10,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -63,4 +64,13 @@ public class User {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
+
+    @OneToMany(mappedBy = "freelancer")
+    private List<Bid> bids;
+
+
+
+    public String getName() {
+        return this.fullName;
+    }
 }
