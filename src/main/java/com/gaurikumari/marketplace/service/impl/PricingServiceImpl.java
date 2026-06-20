@@ -4,7 +4,7 @@ import com.gaurikumari.marketplace.dto.Request.PricingRequest;
 import com.gaurikumari.marketplace.dto.Response.PricingResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import com.gaurikumari.marketplace.service.PricingService;
+import com.gaurikumari.marketplace.service.pricing.PricingService;
 import com.gaurikumari.marketplace.util.ComplexityCalculator;
 import com.gaurikumari.marketplace.util.DurationCalculator;
 import com.gaurikumari.marketplace.util.TechStackCalculator;
