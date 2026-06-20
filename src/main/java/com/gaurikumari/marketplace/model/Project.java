@@ -36,7 +36,7 @@ public class Project {
     private Double budget;
 
     @Column(name = "tech_stack")
-    private String techStack;
+    private List<String> techStack;
 
     @Column(name = "expected_duration")
     private Integer expectedDuration;
