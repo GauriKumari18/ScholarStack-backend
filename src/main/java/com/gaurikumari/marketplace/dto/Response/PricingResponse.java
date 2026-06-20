@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,5 +20,13 @@ public class PricingResponse {
     private Double maximumPrice;
 
     private Double difficultyScore;
+
+    private Double subtotal;
+    private Double developerMultiplier;
+    private Double urgencyMultiplier;
+    private Double totalCost;
+
+    private List<PricingBreakdownResponse> breakdown;
+    private MilestoneResponse milestones;
 
 }
